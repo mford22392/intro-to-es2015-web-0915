@@ -1,11 +1,22 @@
-var steven = {
-  name: "Steven",
-  friends: ["Jeff", "Josh", "Joe"],
-  displayFriends(){
-    console.log("Listing friends for " + this.name);
-    this.friends.forEach((friend) => {
-      console.log(`${friend} is friends with ${this.name}`);
-    })
+class Programmer {
+  constructor(name, language = "ruby") {
+    this.name = name;
+    this.language = language;
   }
+ 
+  evangelize(){
+    return (this.name + ": " + this.language.toUpperCase() + " IS THE BEST LANGUAGE EVER");
+  }
+
 }
-steven.displayFriends();
+
+
+
+
+export var bestLanguages = ["Ruby", "Elixir"];
+export var addJavaScript = function(array){
+  return array + "JavaScript";
+};
+export default Programmer;
+
+
